@@ -1,4 +1,3 @@
-import type Author from "../interfaces/author";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import PostTitle from "./post-title";
@@ -7,10 +6,9 @@ type Props = {
   title: string;
   coverImage: string;
   date: string;
-  author: Author;
 };
 
-const PostHeader = ({ title, coverImage, date, author }: Props) => {
+const PostHeader = ({ title, coverImage, date }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>

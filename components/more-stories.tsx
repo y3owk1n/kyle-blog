@@ -1,9 +1,9 @@
-import PostPreview from './post-preview'
-import type Post from '../interfaces/post'
+import type Post from "../interfaces/post";
+import PostPreview from "./post-preview";
 
 type Props = {
-  posts: Post[]
-}
+  posts: Post[];
+};
 
 const MoreStories = ({ posts }: Props) => {
   return (
@@ -18,14 +18,13 @@ const MoreStories = ({ posts }: Props) => {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
           />
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MoreStories
+export default MoreStories;
