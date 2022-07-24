@@ -9,10 +9,18 @@
   @apply my-6;
 }
 
+.markdown blockquote {
+  @apply bg-gradient-to-br from-pink-400 to-red-600 text-white px-4 py-2 rounded-lg;
+}
+
 .markdown h2 {
   @apply text-3xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown a {
+  @apply font-bold underline underline-offset-4 decoration-red-500 text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600;
 }

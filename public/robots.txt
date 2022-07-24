@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.kylewong.my/sitemap.xml
