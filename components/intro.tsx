@@ -1,21 +1,27 @@
+import Image from "next/image";
 import {
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
   AiFillMail,
 } from "react-icons/ai";
+import { blurDataURL } from "../lib/constants";
 
-/* eslint-disable @next/next/no-img-element */
 const Intro = () => {
   return (
     <section className="mt-16 mb-16 md:mb-12">
       <div className="flex-col md:flex-row flex items-center mb-6">
-        <img
-          src="/assets/profile.jpg"
-          alt="Author"
-          width="100px"
-          className="rounded-full shadow-lg mr-4"
-        />
+        <div className="relative w-[100px] h-[100px] mb-4 md:mr-4 md:mb-0">
+          <Image
+            layout="fill"
+            placeholder="blur"
+            blurDataURL={blurDataURL}
+            objectFit="cover"
+            src="/assets/profile.jpg"
+            alt="Author"
+            className=" rounded-full"
+          />
+        </div>
         <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
           <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
             Kyle&apos;s{" "}
@@ -23,7 +29,7 @@ const Intro = () => {
           Blog
         </h1>
       </div>
-      <p className="text-left text-lg">
+      <p className="text-center md:text-left text-lg">
         A digital marketer and web developer, based in the Malaysia 🇲🇾.
       </p>
       <div className="mt-4 flex gap-4 justify-center md:justify-start">
