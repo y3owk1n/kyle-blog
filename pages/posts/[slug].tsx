@@ -23,9 +23,18 @@ export default function Post({ post, morePosts }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
+  const disqusShortname = "kylewong-my";
+
+  const disqusConfig = {
+    url: `${DOMAIN}/posts/${router.query.slug}`,
+    identifier: post.slug, // Single post id
+    title: post.title, // Single post title
+  };
+
   return (
     <Layout
-      title={post.title}
+      title={`${post.title} | Kyle's Blog`}
       description={post.excerpt}
       image={`${devEnvironment ? DEVDOMAIN : DOMAIN}${post.coverImage}`}
       date={new Date(post.date).toISOString()}
@@ -43,7 +52,11 @@ export default function Post({ post, morePosts }: Props) {
                 coverImage={post.coverImage}
                 date={post.date}
               />
-              <PostBody content={post.content} />
+              <PostBody
+                content={post.content}
+                disqusShortName={disqusShortname}
+                disqusConfig={disqusConfig}
+              />
             </article>
           </>
         )}

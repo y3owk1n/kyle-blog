@@ -1,11 +1,18 @@
+import { DiscussionEmbed } from "disqus-react";
 import Link from "next/link";
 import markdownStyles from "./markdown-styles.module.css";
 
 type Props = {
   content: string;
+  disqusShortName: string;
+  disqusConfig: {
+    url: string;
+    identifier: string;
+    title: string;
+  };
 };
 
-const PostBody = ({ content }: Props) => {
+const PostBody = ({ content, disqusShortName, disqusConfig }: Props) => {
   return (
     <div className="max-w-2xl mx-auto">
       <div
@@ -18,6 +25,9 @@ const PostBody = ({ content }: Props) => {
             Back to home
           </a>
         </Link>
+      </div>
+      <div className="mt-10">
+        <DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
       </div>
     </div>
   );
