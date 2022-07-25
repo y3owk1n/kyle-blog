@@ -10,7 +10,11 @@
 }
 
 .markdown blockquote {
-  @apply bg-gradient-to-br from-pink-400 to-red-600 text-white px-4 py-2 rounded-lg;
+  @apply relative pl-6;
+}
+
+.markdown blockquote > p {
+  @apply before:content-[''] before:absolute before:block before:bg-gradient-to-br before:from-pink-400 before:to-red-600 before:left-0 before:w-[6px] before:h-full;
 }
 
 .markdown h2 {
