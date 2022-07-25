@@ -2,7 +2,7 @@
 title: "Hello Guys!"
 excerpt: "Hi, I'm Kyle. I've left this blog untouched for almost a year now, but I'm re-activating it. Meanwhile I decided to move my blog into a Next.js site."
 coverImage: "/assets/blog/hello/cover.jpg"
-date: "2022-07-24T16:00:00.000Z"
+date: "2022-07-23T16:00:00.000Z"
 ogImage:
   url: "/assets/blog/hello/cover.jpg"
 ---
