@@ -13,7 +13,7 @@ const Header = () => {
               objectFit="cover"
               placeholder="blur"
               blurDataURL={blurDataURL}
-              src="/assets/profile.jpg"
+              src="/assets/profile.png"
               alt="Author"
               className=" rounded-full"
             />

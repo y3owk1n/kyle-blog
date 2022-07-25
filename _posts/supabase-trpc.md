@@ -1,6 +1,6 @@
 ---
 title: "Supabase + tRPC = ❤️"
-excerpt: "Hi, I'm Kyle. I've left this blog untouched for almost a year now, but I'm re-activating it. Meanwhile I decided to move my blog into a Next.js site."
+excerpt: "Next.js is amazing and Typescript made development even more amazing! The entire time i was finding a way to have end-to-end type safety solution until i met tRPC, almost perfect there."
 coverImage: "/assets/blog/supabase-trpc/cover.jpg"
 date: "2022-07-24T16:00:00.000Z"
 ogImage:

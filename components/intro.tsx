@@ -17,7 +17,7 @@ const Intro = () => {
             placeholder="blur"
             blurDataURL={blurDataURL}
             objectFit="cover"
-            src="/assets/profile.jpg"
+            src="/assets/profile.png"
             alt="Author"
             className=" rounded-full"
           />
