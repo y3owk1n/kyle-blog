@@ -7,17 +7,17 @@ ogImage:
   url: "/assets/blog/supabase-trpc/cover.jpg"
 ---
 
-[Next.js](https://nextjs.org/) is amazing and [Typescript](https://www.typescriptlang.org) made development even more amazing! The entire time i was finding a way to have end-to-end type safety solution until i met [tRPC](https://trpc.io), almost perfect there.
+[Next.js](https://nextjs.org/) is amazing and [Typescript](https://www.typescriptlang.org) made development even more amazing! The entire time I was finding a way to have an end-to-end type safety solution until I met [tRPC](https://trpc.io), almost perfect there.
 
 But... it wasn't yet perfect enough.
 
-There are a lot of examples of end-to-end tRPC in the web, where majority that I followed was utilising [Prisma](https://www.prisma.io) as the ORM layer for type safety.
+There are a lot of examples of end-to-end tRPC on the web, where the majority that I followed was utilising [Prisma](https://www.prisma.io) as the ORM layer for type safety.
 
 > At this point, I am still in love with [Supabase](https://supabase.com)
 
-Overall, Supabase is great, and I am able to generate types from Supabase directly by following the [doc](https://supabase.com/docs/guides/api/generating-types). But here's the issue... the generated types are not suitable to be inferred directly through tRPC routers, since I am only able to grab the main types from it `definitions['table']`, but not the exact types that I am returning from the API.
+Overall, Supabase is great, and I can generate types from Supabase directly by following the [doc](https://supabase.com/docs/guides/api/generating-types). But here's the issue... the generated types are not suitable to be inferred directly through tRPC routers, since I am only able to grab the main types from its `definitions['table']`, but not the exact types that I am returning from the API.
 
-And here I came across this cool tiny tool [postgrest-js-tools](https://www.npmjs.com/package/postgrest-js-tools). So how does this work? _(I won't be going through how to use tRPC here, refer to the docs 😉)_
+And here I came across this cool tiny tool [postgrest-js-tools](https://www.npmjs.com/package/postgrest-js-tools). So how does this work? `(I won't be going through how to use tRPC here, refer to the docs 😉)`
 
 First install the package:
 
@@ -53,8 +53,8 @@ const { data, error } = await supabase
 // typeof data => { id: number, fieldThatIWant: string }
 ```
 
-Now we can pass the data down to the client through tRPC with typesafety!
+Now we can pass the data down to the client through tRPC with type-safety!
 
-Overall I am so happy that I found this tool. Just to end this, I still think Prisma should be a better fit in the stack for tRPC. I had considered to use [Prisma with Supabase](https://supabase.com/docs/guides/integrations/prisma), however it seems like a hassle and lot's of incompatibilities at this point of time. Will definitely revisit this in the future.
+Overall I am so happy that I found this tool. Just to end this, I still think Prisma should be a better fit in the stack for tRPC. I had considered using [Prisma with Supabase](https://supabase.com/docs/guides/integrations/prisma), however, it seems like a hassle and a lot's of incompatibilities at this point in time. Will definitely revisit this in the future.
 
 > Try it out if you're using tRPC with Supabase, it's amazing still ❤️
