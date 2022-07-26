@@ -76,7 +76,7 @@ export async function getStaticProps({ params }: Params) {
     "title",
     "date",
     "slug",
-    "author",
+    "excerpt",
     "content",
     "ogImage",
     "coverImage",
