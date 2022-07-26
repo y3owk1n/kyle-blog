@@ -21,7 +21,8 @@ async function generate() {
             const path = page
               .replace("pages", "")
               .replace(".tsx", "")
-              .replace(".md", "");
+              .replace(".md", "")
+              .replace("_posts", "/posts");
             const route = path === "/index" ? "" : path;
 
             return `
