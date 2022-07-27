@@ -24,12 +24,12 @@ export default function Post({ post, morePosts }: Props) {
     return <ErrorPage statusCode={404} />;
   }
 
-  const disqusShortname = "kylewong-my";
-
-  const disqusConfig = {
-    url: `${DOMAIN}/posts/${router.query.slug}`,
-    identifier: post.slug, // Single post id
-    title: post.title, // Single post title
+  const cusdisConfig = {
+    host: "https://cusdis.com",
+    appId: "dd7384ab-05eb-47e5-b480-aab8f597b3a1",
+    pageId: post.slug,
+    pageTitle: post.title,
+    pageUrl: `${DOMAIN}/posts/${router.query.slug}`,
   };
 
   return (
@@ -52,11 +52,7 @@ export default function Post({ post, morePosts }: Props) {
                 coverImage={post.coverImage}
                 date={post.date}
               />
-              <PostBody
-                content={post.content}
-                disqusShortName={disqusShortname}
-                disqusConfig={disqusConfig}
-              />
+              <PostBody content={post.content} cusdisConfig={cusdisConfig} />
             </article>
           </>
         )}

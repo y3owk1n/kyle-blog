@@ -1,19 +1,18 @@
-import { DiscussionEmbed } from "disqus-react";
 import Link from "next/link";
+import { ReactCusdis } from "react-cusdis";
 
 type Props = {
   content: string;
-  disqusShortName: string;
-  disqusConfig: {
-    url: string;
-    identifier: string;
-    title: string;
+  cusdisConfig: {
+    host: string;
+    appId: string;
+    pageId: string;
+    pageTitle: string;
+    pageUrl: string;
   };
 };
 
-const PostBody = ({ content, disqusShortName, disqusConfig }: Props) => {
-  const isDev = process.env.NODE_ENV === "development";
-
+const PostBody = ({ content, cusdisConfig }: Props) => {
   return (
     <div className="max-w-2xl mx-auto">
       <div
@@ -27,11 +26,10 @@ const PostBody = ({ content, disqusShortName, disqusConfig }: Props) => {
           </a>
         </Link>
       </div>
-      {!isDev && (
-        <div className="mt-10">
-          <DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
-        </div>
-      )}
+      <hr className="my-16" />
+      <div className="">
+        <ReactCusdis attrs={cusdisConfig} />
+      </div>
     </div>
   );
 };
