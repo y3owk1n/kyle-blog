@@ -25,8 +25,8 @@ export default function Post({ post, morePosts }: Props) {
   }
 
   const cusdisConfig = {
-    host: "https://cusdis.com",
-    appId: "dd7384ab-05eb-47e5-b480-aab8f597b3a1",
+    host: "https://cusdis.kylewong.my",
+    appId: "13d769e7-cc37-46e7-82d8-48656c2a697d",
     pageId: post.slug,
     pageTitle: post.title,
     pageUrl: `${DOMAIN}/posts/${router.query.slug}`,
