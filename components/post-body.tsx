@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ReactCusdis } from "react-cusdis";
 
 type Props = {
   content: string;
@@ -26,10 +25,10 @@ const PostBody = ({ content, cusdisConfig }: Props) => {
           </a>
         </Link>
       </div>
-      <hr className="my-16" />
+      {/* <hr className="my-16" />
       <div className="">
         <ReactCusdis attrs={cusdisConfig} />
-      </div>
+      </div> */}
     </div>
   );
 };
