@@ -1,5 +1,5 @@
 import cn from "classnames";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { blurDataURL } from "../lib/constants";
 
@@ -28,8 +28,8 @@ const CoverImage = ({ title, src, slug }: Props) => {
   return (
     <div className="sm:mx-0">
       {slug ? (
-        <Link href={`/posts/${slug}`} passHref>
-          <a aria-label={title}>{image}</a>
+        <Link href={`/posts/${slug}`} passHref aria-label={title}>
+          {image}
         </Link>
       ) : (
         image
