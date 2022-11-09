@@ -2,16 +2,9 @@ import Link from "next/link";
 
 type Props = {
   content: string;
-  cusdisConfig: {
-    host: string;
-    appId: string;
-    pageId: string;
-    pageTitle: string;
-    pageUrl: string;
-  };
 };
 
-const PostBody = ({ content, cusdisConfig }: Props) => {
+const PostBody = ({ content }: Props) => {
   return (
     <div className="max-w-2xl mx-auto">
       <div
@@ -22,16 +15,11 @@ const PostBody = ({ content, cusdisConfig }: Props) => {
         <Link
           href="/"
           passHref
-          className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-pink-400 to-red-400 hover:from-pink-500 hover:to-red-500">
-          
-            Back to home
-          
+          className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-pink-400 to-red-400 hover:from-pink-500 hover:to-red-500"
+        >
+          Back to home
         </Link>
       </div>
-      {/* <hr className="my-16" />
-      <div className="">
-        <ReactCusdis attrs={cusdisConfig} />
-      </div> */}
     </div>
   );
 };
