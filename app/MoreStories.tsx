@@ -1,5 +1,5 @@
-import type Post from "../interfaces/post";
-import PostPreview from "./post-preview";
+import type Post from "@/interfaces/post";
+import PostPreview from "./PostPreview";
 
 type Props = {
   posts: Partial<Post>[];

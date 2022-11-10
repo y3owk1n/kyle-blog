@@ -1,9 +1,7 @@
 import Script from "next/script";
-import "../styles/index.css";
+import "@/styles/index.css";
 
 export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
   children,
 }: {
   children: React.ReactNode;
@@ -20,7 +18,9 @@ export default function RootLayout({
         />
       )}
 
-      <body>{children}</body>
+      <body>
+        <div className="container mx-auto px-5">{children}</div>
+      </body>
     </html>
   );
 }

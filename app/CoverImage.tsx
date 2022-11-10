@@ -1,7 +1,7 @@
+import { blurDataURL } from "@/lib/constants";
 import cn from "classnames";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
-import { blurDataURL } from "../lib/constants";
 
 type Props = {
   title: string;
@@ -13,8 +13,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <div className="relative aspect-[2/1]">
       <Image
-        layout="fill"
-        objectFit="cover"
+        fill={true}
         placeholder="blur"
         blurDataURL={blurDataURL}
         src={src}

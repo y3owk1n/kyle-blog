@@ -1,10 +1,8 @@
-import Container from "../../../components/container";
-import Header from "../../../components/header";
-import PostBody from "../../../components/post-body";
-import PostHeader from "../../../components/post-header";
-import { Params } from "../../../interfaces/next";
-import { getAllPosts, getPostBySlug } from "../../../lib/api";
-import markdownToHtml from "../../../lib/markdownToHtml";
+import { Params } from "@/interfaces/next";
+import { getAllPosts, getPostBySlug } from "@/lib/api";
+import markdownToHtml from "@/lib/markdownToHtml";
+import PostBody from "./PostBody";
+import PostHeader from "./PostHeader";
 
 export const dynamicParams = false;
 
@@ -30,8 +28,7 @@ export default async function Post({ params }: Params) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <Container>
-      <Header />
+    <>
       <article className="mb-32">
         <PostHeader
           title={post.title}
@@ -40,6 +37,6 @@ export default async function Post({ params }: Params) {
         />
         <PostBody content={content} />
       </article>
-    </Container>
+    </>
   );
 }

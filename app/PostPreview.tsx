@@ -1,7 +1,8 @@
-import Link from "next/link";
+"use client";
 
-import CoverImage from "./cover-image";
-import DateFormatter from "./date-formatter";
+import Link from "next/link";
+import CoverImage from "./CoverImage";
+import DateFormatter from "./DateFormatter";
 
 type Props = {
   title: string;

@@ -1,4 +1,4 @@
-import { DEVDOMAIN, DOMAIN } from "../lib/constants";
+import { DEVDOMAIN, DOMAIN } from "@/lib/constants";
 
 export default async function Head() {
   const devEnvironment = process.env.NODE_ENV === "development";

@@ -1,16 +1,14 @@
-import Image from "next/legacy/image";
+import { blurDataURL } from "@/lib/constants";
+import Image from "next/image";
 import Link from "next/link";
-import { blurDataURL } from "../lib/constants";
 
 const Header = () => {
   return (
-    (<Link href="/" passHref>
-
+    <Link href="/" passHref>
       <div className="flex-col md:flex-row flex items-center mb-20 mt-8">
         <div className="relative w-[40px] h-[40px] mb-4 md:mr-4 md:mb-0">
           <Image
-            layout="fill"
-            objectFit="cover"
+            fill={true}
             placeholder="blur"
             blurDataURL={blurDataURL}
             src="/assets/profile.png"
@@ -25,8 +23,7 @@ const Header = () => {
           Blog
         </h2>
       </div>
-
-    </Link>)
+    </Link>
   );
 };
 

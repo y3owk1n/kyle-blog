@@ -1,6 +1,6 @@
-import CoverImage from "./cover-image";
-import DateFormatter from "./date-formatter";
-import PostTitle from "./post-title";
+import CoverImage from "../../CoverImage";
+import DateFormatter from "../../DateFormatter";
+import PostTitle from "./PostTitle";
 
 type Props = {
   title: string;
