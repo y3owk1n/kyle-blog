@@ -1,14 +1,14 @@
 import Header from "./Header";
 
 export default function PostLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <>
-      <Header />
-      {children}
-    </>
-  );
+    return (
+        <>
+            <Header />
+            {children}
+        </>
+    );
 }

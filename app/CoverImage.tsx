@@ -4,37 +4,37 @@ import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
-  title: string;
-  src: string;
-  slug?: string;
+    title: string;
+    src: string;
+    slug?: string;
 };
 
 const CoverImage = ({ title, src, slug }: Props) => {
-  const image = (
-    <div className="relative aspect-[2/1]">
-      <Image
-        fill={true}
-        placeholder="blur"
-        blurDataURL={blurDataURL}
-        src={src}
-        alt={`Cover Image for ${title}`}
-        className={cn("shadow-sm rounded-lg ", {
-          "hover:shadow-lg transition-shadow duration-200": slug,
-        })}
-      />
-    </div>
-  );
-  return (
-    <div className="sm:mx-0">
-      {slug ? (
-        <Link href={`/posts/${slug}`} passHref aria-label={title}>
-          {image}
-        </Link>
-      ) : (
-        image
-      )}
-    </div>
-  );
+    const image = (
+        <div className="relative aspect-[2/1]">
+            <Image
+                fill={true}
+                placeholder="blur"
+                blurDataURL={blurDataURL}
+                src={src}
+                alt={`Cover Image for ${title}`}
+                className={cn("shadow-sm rounded-lg ", {
+                    "hover:shadow-lg transition-shadow duration-200": slug,
+                })}
+            />
+        </div>
+    );
+    return (
+        <div className="sm:mx-0">
+            {slug ? (
+                <Link href={`/posts/${slug}`} passHref aria-label={title}>
+                    {image}
+                </Link>
+            ) : (
+                image
+            )}
+        </div>
+    );
 };
 
 export default CoverImage;
