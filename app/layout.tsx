@@ -1,5 +1,10 @@
 import Script from "next/script";
 import "@/styles/index.css";
+import { Raleway } from "@next/font/google";
+
+const raleway = Raleway({
+    variable: "--font-inter",
+});
 
 export default function RootLayout({
     children,
@@ -9,7 +14,7 @@ export default function RootLayout({
     const isDev = process.env.NODE_ENV === "development";
 
     return (
-        <html lang="en">
+        <html lang="en" className={raleway.className}>
             {!isDev && (
                 <Script
                     src={"https://5oddwdpyqe.kylewong.my/umami.js"}
