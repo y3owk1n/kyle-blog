@@ -2,18 +2,10 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@/app/*": [
-                "app/*"
-            ],
-            "@/interfaces/*": [
-                "interfaces/*"
-            ],
-            "@/lib/*": [
-                "lib/*"
-            ],
-            "@/styles/*": [
-                "styles/*"
-            ]
+            "@/app/*": ["app/*"],
+            "@/interfaces/*": ["interfaces/*"],
+            "@/lib/*": ["lib/*"],
+            "@/styles/*": ["styles/*"]
         },
         "target": "es5",
         "module": "esnext",
@@ -22,11 +14,7 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "lib": [
-            "dom",
-            "dom.iterable",
-            "esnext"
-        ],
+        "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
         "noEmit": true,
         "moduleResolution": "node",
@@ -39,13 +27,6 @@
             }
         ]
     },
-    "exclude": [
-        "node_modules"
-    ],
-    "include": [
-        "next-env.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
-        ".next/types/**/*.ts"
-    ]
+    "exclude": ["node_modules"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }

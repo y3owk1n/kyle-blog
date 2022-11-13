@@ -4,7 +4,7 @@ excerpt: "As a digital marketers, we tend to track everything that we can. From 
 coverImage: "/assets/blog/bye-google-analytics-hi-umami/cover.jpg"
 date: "2022-07-25T16:00:00.000Z"
 ogImage:
-  url: "/assets/blog/bye-google-analytics-hi-umami/cover.jpg"
+    url: "/assets/blog/bye-google-analytics-hi-umami/cover.jpg"
 ---
 
 As a digital marketers, we tend to track everything that we can. From recordings, heatmaps, proprietary trackers, profiling and more! For my job, it's perfect, but personally... I don't like getting tracked in any way.
@@ -23,10 +23,10 @@ First, I need a Web Analytics that is:
 
 And here's my list:
 
-- [Ackee](https://ackee.electerious.com)
-- [Umami](https://umami.is)
-- [Plausible](https://plausible.io)
-- There's probably more... but I am lazy (sorry)
+-   [Ackee](https://ackee.electerious.com)
+-   [Umami](https://umami.is)
+-   [Plausible](https://plausible.io)
+-   There's probably more... but I am lazy (sorry)
 
 Yes.. I've gone with Umami instead. The reason? I found a 1 click deploy version from [Railway](https://railway.app/starters?search=umami&referralCode=mK3Big), amazing tool with generous free tier ❤️. It's not entirely hands-free for the deployment, but it was pretty easy! After completed the 1 click deploy on Railway, [follow this guide](https://umami.is/docs/running-on-railway) to link the project, and you're done.
 

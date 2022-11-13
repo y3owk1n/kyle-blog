@@ -4,7 +4,7 @@ excerpt: "Next.js is amazing and Typescript made development even more amazing! 
 coverImage: "/assets/blog/supabase-trpc/cover.jpg"
 date: "2022-07-24T16:00:00.000Z"
 ogImage:
-  url: "/assets/blog/supabase-trpc/cover.jpg"
+    url: "/assets/blog/supabase-trpc/cover.jpg"
 ---
 
 [Next.js](https://nextjs.org/) is amazing and [Typescript](https://www.typescriptlang.org) made development even more amazing! The entire time I was finding a way to have an end-to-end type safety solution until I met [tRPC](https://trpc.io), almost perfect there.
