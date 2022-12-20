@@ -7,7 +7,7 @@
 		"postbuild": "next-sitemap",
 		"start": "next start",
 		"clean": "find . -name node_modules -o -name .next -o -name .turbo -o -name dist -type d -prune | xargs rm -rf",
-        "lint": "next lint",
+		"lint": "next lint",
 		"typecheck": "tsc"
 	},
 	"dependencies": {
@@ -17,7 +17,8 @@
 		"date-fns": "^2.29.3",
 		"gray-matter": "^4.0.3",
 		"next": "^13.0.7",
-		"next-sitemap": "^3.1.42",
+		"next-sitemap": "^3.1.43",
+		"npm-check-updates": "^16.6.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-icons": "^4.7.1",
