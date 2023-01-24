@@ -34,29 +34,25 @@ const Intro = () => {
                 <a
                     href="https://github.com/y3owk1n"
                     target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    rel="noopener noreferrer">
                     <AiFillGithub className="h-5 w-5" />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/kyle-wong-958a58115/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    rel="noopener noreferrer">
                     <AiFillLinkedin className="h-5 w-5" />
                 </a>
                 <a
                     href="https://www.instagram.com/yeowkin/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    rel="noopener noreferrer">
                     <AiFillInstagram className="h-5 w-5" />
                 </a>
                 <a
                     href="mailto:me@kylewong.my"
                     target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    rel="noopener noreferrer">
                     <AiFillMail className="h-5 w-5" />
                 </a>
             </div>

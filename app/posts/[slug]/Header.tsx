@@ -4,7 +4,9 @@ import Link from "next/link";
 
 const Header = () => {
     return (
-        <Link href="/" passHref>
+        <Link
+            href="/"
+            passHref>
             <div className="flex-col md:flex-row flex items-center mb-20 mt-8">
                 <div className="relative w-[40px] h-[40px] mb-4 md:mr-4 md:mb-0">
                     <Image

@@ -15,7 +15,9 @@ export default function RootLayout({
     const isDev = process.env.NODE_ENV === "development";
 
     return (
-        <html lang="en" className={raleway.className}>
+        <html
+            lang="en"
+            className={raleway.className}>
             {!isDev && (
                 <Script
                     src={"https://5oddwdpyqe.kylewong.my/umami.js"}

@@ -15,8 +15,7 @@ const PostBody = ({ content }: Props) => {
                 <Link
                     href="/"
                     passHref
-                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-pink-400 to-red-400 hover:from-pink-500 hover:to-red-500"
-                >
+                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-pink-400 to-red-400 hover:from-pink-500 hover:to-red-500">
                     Back to home
                 </Link>
             </div>
