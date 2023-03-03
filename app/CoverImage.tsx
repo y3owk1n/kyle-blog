@@ -7,15 +7,17 @@ type Props = {
     title: string;
     src: string;
     slug?: string;
+    isEager?: boolean;
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug, isEager = false }: Props) => {
     const image = (
         <div className="relative aspect-[2/1]">
             <Image
                 fill={true}
                 placeholder="blur"
                 blurDataURL={blurDataURL}
+                loading={isEager ? "eager" : "lazy"}
                 src={src}
                 alt={`Cover Image for ${title}`}
                 className={cn("shadow-sm rounded-lg ", {

@@ -16,6 +16,7 @@ const PostHeader = ({ title, coverImage, date }: Props) => {
                 <CoverImage
                     title={title}
                     src={coverImage}
+                    isEager
                 />
             </div>
             <div className="max-w-2xl mx-auto">
